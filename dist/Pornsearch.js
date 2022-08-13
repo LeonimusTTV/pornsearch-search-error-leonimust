@@ -85,7 +85,7 @@ var Pornsearch = function () {
         }).catch(function (error) {
           console.warn(error);
 
-          reject(new Error('No results for search related to ' + _this.module.query + ' in page ' + page));
+          new Error('No results for search related to ' + _this.module.query + ' in page ' + page);
         });
       });
     }
